@@ -1,0 +1,61 @@
+[{
+  "name": "First Website Test",
+  "code": "You did it! The page meets all requirements!",
+  "tests": [
+    {
+      "description": "The page contains the bootstrap framework",
+      "definition": {
+        "nodes": "link",
+        "attribute": "href",
+        "hasSubstring": "/bootstrap/"
+      }
+    },
+    {
+      "description": "One image on the page",
+      "definition": {
+        "nodes": "img",
+        "get": "count",
+        "equals": 1
+      }
+    },
+    {
+      "description": "The image has a relative src",
+      "definition": {
+        "nodes": "img",
+        "attribute": "src",
+        "hasSubstring": "^assets/img/lane_Tech.png$"
+      }
+    },
+    {
+      "description": "The image has an alt attribute",
+      "definition": {
+        "nodes": "img",
+        "attribute": "alt",
+        "hasSubstring": ".+"
+      }
+    },
+    {
+      "description": "There is a project description header after the image",
+      "definition": {
+        "nodes": "img + h3",
+        "exists": true
+      }
+    },
+    {
+      "description": "The paragraph contains the correct source link",
+      "definition": {
+        "nodes": "img + p > a",
+        "attribute": "href",
+        "hasSubstring": "https:\\/\\/commons\\.wikimedia\\.org\\/wiki\\/File%3AStout_Memorial_Grove_in_Jedediah_Smith_Redwoods_State_Park_in_2011_\\(22\\).JPG"
+      }
+    },
+    {
+      "description": "The paragraph attributes the photographer",
+      "definition": {
+        "nodes": "img + p",
+        "get": "innerHTML",
+        "hasSubstring": "Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011"
+      }
+    }
+  ]
+}]
