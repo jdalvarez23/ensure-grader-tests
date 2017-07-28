@@ -5,7 +5,7 @@
     {
       "description": "The page contains the bootstrap framework",
       "definition": {
-        "nodes": "head > .bootstrap",
+        "nodes": "head .bootstrap",
         "attribute": "href",
         "hasSubstring": "/bootstrap/"
       }
