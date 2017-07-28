@@ -37,8 +37,15 @@
     {
       "description": "There is a project description header after the image",
       "definition": {
-        "nodes": "img + h3",
+        "nodes": "h3 + p",
         "exists": true
+      }
+    },
+    {
+      "description": "The project description contains a specific word",
+      "definition": {
+        "nodes": "h3 + p",
+        "hasSubstring": "/Lorem/"
       }
     },
     {
