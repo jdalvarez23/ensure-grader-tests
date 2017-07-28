@@ -44,7 +44,7 @@
     {
       "description": "The project description contains a specific word",
       "definition": {
-        "nodes": "h3 + p",
+        "nodes": ".col-md-4 > p",
         "hasSubstring": "^Lorem"
       }
     },
