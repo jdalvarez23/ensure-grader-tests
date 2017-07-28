@@ -5,7 +5,7 @@
     {
       "description": "The page contains the bootstrap framework",
       "definition": {
-        "nodes": "#bootstrap",
+        "nodes": ".bootstrap",
         "attribute": "href",
         "hasSubstring": "/bootstrap/"
       }
@@ -55,7 +55,10 @@
         "nodes": "img + p",
         "get": "innerHTML",
         "hasSubstring": "Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011"
-      }
+      },
+      "flags": {
+          "noRepeat": true
+        }
     }
   ]
 }]
