@@ -1,13 +1,13 @@
 [{
-  "name": "First Website Test",
+  "name": "First Website",
   "code": "You did it! The page meets all requirements!",
   "tests": [
     {
       "description": "The page contains the bootstrap framework",
       "definition": {
-        "nodes": "head .bootstrap",
+        "nodes": "link",
         "attribute": "href",
-        "hasSubstring": "/bootstrap/"
+        "hasSubstring": "https:\\/\\/cdnjs.cloudflare.com\\/ajax\\/libs\\/twitter-bootstrap\\/3.3.7\\/css\\/bootstrap.min.css"
       }
     },
     {
