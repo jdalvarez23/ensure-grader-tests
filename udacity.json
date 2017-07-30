@@ -5,7 +5,7 @@
     {
       "description": "The page contains the bootstrap framework",
       "definition": {
-        "nodes": "link",
+        "nodes": "head .bootstrap",
         "attribute": "href",
         "hasSubstring": "https:\\/\\/cdnjs.cloudflare.com\\/ajax\\/libs\\/twitter-bootstrap\\/3.3.7\\/css\\/bootstrap.min.css"
       }
