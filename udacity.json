@@ -70,14 +70,6 @@
       }
     },
     {
-      "description": "HTML - The image has an alt attribute.",
-      "definition": {
-        "nodes": "img",
-        "attribute": "alt",
-        "hasSubstring": ".+"
-      }
-    },
-    {
       "description": "HTML - There is a paragraph (p) after the description header (h3) in the school description div.",
       "definition": {
         "nodes": "#school_Description > h3 + p",
