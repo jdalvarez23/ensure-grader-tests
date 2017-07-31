@@ -3,7 +3,31 @@
   "code": "You did it! The page meets all requirements!",
   "tests": [
     {
-      "description": "The page contains the bootstrap framework",
+      "description": "CSS - The navbar has a teal (#149c82) background color.",
+      "definition": {
+        "nodes": ".navbar > .navbar-collapse",
+        "cssProperty": "backgroundColor",
+        "equals": "rgb(20, 156, 130)"
+      }
+    },
+    {
+      "description": "CSS - The image has a width of 655px.",
+      "definition": {
+        "nodes": "img",
+        "cssProperty": "width",
+        "equals": "655px"
+      }
+    },
+    {
+      "description": "CSS - The h3 elements have a font size of 26px.",
+      "definition": {
+        "nodes": "h3",
+        "cssProperty": "fontSize",
+        "equals": "26px"
+      }
+    },
+    {
+      "description": "CSS - The page contains the bootstrap css framework.",
       "definition": {
         "nodes": "head .bootstrap",
         "attribute": "href",
@@ -11,7 +35,7 @@
       }
     },
     {
-      "description": "One image on the page",
+      "description": "HTML - The page contains one image.",
       "definition": {
         "nodes": "img",
         "get": "count",
@@ -19,7 +43,7 @@
       }
     },
     {
-      "description": "The image has a relative src",
+      "description": "HTML - The image has a relative source.",
       "definition": {
         "nodes": "img",
         "attribute": "src",
@@ -27,7 +51,7 @@
       }
     },
     {
-      "description": "The image has an alt attribute",
+      "description": "HTML - The image has an alt attribute.",
       "definition": {
         "nodes": "img",
         "attribute": "alt",
@@ -35,37 +59,38 @@
       }
     },
     {
-      "description": "There is a project description header after the image",
+      "description": "HTML - The image has an alt attribute.",
       "definition": {
-        "nodes": "h3 + p",
+        "nodes": "img",
+        "attribute": "alt",
+        "hasSubstring": ".+"
+      }
+    },
+    {
+      "description": "HTML - There is a paragraph (p) after the description header (h3) in the school description div.",
+      "definition": {
+        "nodes": "#school_Description > h3 + p",
         "exists": true
       }
     },
     {
-      "description": "The project description contains a specific word",
+      "description": "HTML - The description paragraph (p) contains the words 'Lane Tech High School'",
       "definition": {
-        "nodes": ".col-md-4 > p",
-        "hasSubstring": "^Lorem"
-      }
-    },
-    {
-      "description": "The paragraph contains the correct source link",
-      "definition": {
-        "nodes": "img + p > a",
-        "attribute": "href",
-        "hasSubstring": "https:\\/\\/commons\\.wikimedia\\.org\\/wiki\\/File%3AStout_Memorial_Grove_in_Jedediah_Smith_Redwoods_State_Park_in_2011_\\(22\\).JPG"
-      }
-    },
-    {
-      "description": "The paragraph attributes the photographer",
-      "definition": {
-        "nodes": "img + p",
+        "nodes": "#school_Description > h3 + p",
         "get": "innerHTML",
-        "hasSubstring": "Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011"
-      },
-      "flags": {
+        "hasSubstring": "Lane Tech High School"
+      }
+    },
+    {
+      "description": "HTML - There is at least two award in the school awards div.",
+      "definition": {
+        "nodes": "#school_Awards > ul > li ",
+        "get": "count",
+        "isGreaterThan": 2,
+        "flags": {
           "noRepeat": true
         }
-    }
+      }
+    },
   ]
-}]
+  }]
