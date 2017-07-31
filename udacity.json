@@ -3,11 +3,11 @@
   "code": "You did it! The page meets all requirements!",
   "tests": [
     {
-      "description": "CSS - The navbar has a teal (#149c82) background color.",
+      "description": "CSS - The navbar has a teal (#18bc9c) background color.",
       "definition": {
-        "nodes": ".navbar > .navbar-collapse",
+        "nodes": ".navbar",
         "cssProperty": "backgroundColor",
-        "equals": "rgb(20, 156, 130)"
+        "equals": "rgb(24, 188, 156)"
       }
     },
     {
@@ -82,14 +82,11 @@
       }
     },
     {
-      "description": "HTML - There is at least two award in the school awards div.",
+      "description": "HTML - There is at least two awards in the school awards div.",
       "definition": {
         "nodes": "#school_Awards > ul > li ",
         "get": "count",
-        "isGreaterThan": 2,
-        "flags": {
-          "noRepeat": true
-        }
+        "isGreaterThan": 2
       }
     }
   ]
