@@ -1,0 +1,39 @@
+[{
+  "name": "First Website",
+  "code": "You did it! The page meets all requirements!",
+  "tests": [
+    {
+      "description": "CSS - The navbar has a teal (#149c82) background color.",
+      "definition": {
+        "nodes": ".navbar > .navbar-collapse",
+        "cssProperty": "backgroundColor",
+        "equals": "rgb(20, 156, 130)"
+      }
+    },
+    {
+      "description": "CSS - The image has a width of 655px.",
+      "definition": {
+        "nodes": "img",
+        "cssProperty": "width",
+        "equals": "655px"
+      }
+    },
+    {
+      "description": "CSS - The h3 elements have a font size of 26px.",
+      "definition": {
+        "nodes": "h3",
+        "cssProperty": "fontSize",
+        "equals": "26px"
+      }
+    },
+    {
+      "description": "CSS - The page contains the bootstrap css framework.",
+      "definition": {
+        "nodes": "head .bootstrap",
+        "attribute": "href",
+        "hasSubstring": "https:\\/\\/cdnjs.cloudflare.com\\/ajax\\/libs\\/twitter-bootstrap\\/3.3.7\\/css\\/bootstrap.min.css"
+      }
+    },
+    
+  ]
+  }]
