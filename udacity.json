@@ -3,7 +3,7 @@
   "code": "You did it! The page meets all requirements!",
   "tests": [
     {
-      "description": "CSS - The navbar has a teal (#18bc9c) background color.",
+      "description": "CSS - The navbar has a teal (#18bc9c)[rgb(24, 188, 156)] background color.",
       "definition": {
         "nodes": ".navbar",
         "cssProperty": "backgroundColor",
