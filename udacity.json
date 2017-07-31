@@ -35,6 +35,17 @@
       }
     },
     {
+      "description": "HTML - The navbar has in between 2-5 link (a) elements.",
+      "definition": {
+        "nodes": ".navbar-collapse > ul > li ",
+        "get": "count",
+        "isInRange": {
+          "lower": 2,
+          "upper": 5
+        }
+      }
+    },
+    {
       "description": "HTML - The page contains one image.",
       "definition": {
         "nodes": "img",
