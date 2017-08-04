@@ -89,7 +89,7 @@
       "definition": {
         "nodes": "#input_Text",
         "attribute": "value",
-        "hasSubstring": "Jose"
+        "equals": "Jose"
       }
     },
     {
