@@ -88,8 +88,8 @@
       "description": "HTML - The input value is 'Jose'",
       "definition": {
         "nodes": "#input_Text",
-        "attribute": "value",
-        "equals": "Jose"
+        "get": "innerHTML",
+        "hasSubstring": "Jose"
       }
     },
     {
