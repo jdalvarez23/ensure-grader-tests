@@ -87,7 +87,7 @@
     {
       "description": "HTML - The input value is 'Jose'",
       "definition": {
-        "nodes": "#input_Text",
+        "nodes": "#form_Div > .col-md-3 > p",
         "get": "innerHTML",
         "hasSubstring": "Jose"
       }
