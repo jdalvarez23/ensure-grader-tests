@@ -85,11 +85,11 @@
       }
     },
     {
-      "description": "HTML - The input value is 'Jose'",
+      "description": "HTML - The input value is 'Ensure'",
       "definition": {
         "nodes": "#form_Div > .col-md-3 > p",
         "get": "innerHTML",
-        "hasSubstring": "Jose"
+        "hasSubstring": "Ensure"
       },
       "flags": {
         "alwaysRun": true
